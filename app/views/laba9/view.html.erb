@@ -1,0 +1,12 @@
+<h1>Laba9#view</h1>
+<p>Find me in app/views/laba9/view.html.erb</p>
+<h1>Lab8#view</h1>
+<table>
+  <tr><th>Порядковый номер</th><th>Билет</th></tr>
+  <% lv_count = 0 %> 
+  <% @result.each do |value|%>
+    <% lv_count = lv_count + 1 %>
+    <tr><th><%= lv_count %></th><th><%= "#{value}" %> </th></tr>
+  <%end %>
+</table>
+<%= link_to "Повторить поиск", :laba9_input %>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Лабораторная № 9 AJAX</h1>    
+    <meta http-equiv="Content-Type" content="text/html;
+charset=utf-8" />
+    <title>AJAX laba9 test</title>
+    <script>
+        laba9_url = location.protocol + "//" + location.host +
+            "/laba9/view.json"
+        function send_query() {
+            var frm = document.forms.laba9_form;
+            var param_str = "";
+            param_str = "?" + "v1=" + frm.v1.value;
+            if (param_str == "") return false;
+            var my_JSON_object = {};
+            var http_request = new XMLHttpRequest();
+            http_request.open("GET", laba9_url + param_str, true);
+            http_request.onreadystatechange = function () {
+                var done = 4, ok = 200;
+                if (http_request.readyState == done &&
+                    http_request.status == ok) {
+                    my_JSON_object =
+                        JSON.parse(http_request.responseText);
+                    show_result(my_JSON_object);
+                }
+            };
+            http_request.send(null);
+            return false;
+        }
+        function show_result(data){
+            var result = document.getElementById("result");
+            var lv_html = '<table cellpadding="3">';
+            lv_html += '<tr><th>Порядковый номер</th><th>Билет</th></tr>'
+            for(var i = 0; i < data.value.length; i++)
+            {
+                lv_html += '<tr>';
+                lv_html += '<td>' + i + '</td>';
+                lv_html += '<td>' + data.value[i] + '</td>';
+                lv_html += '</tr>';
+            }
+
+            result.innerHTML = "<hr/><p>"+Date()+"</p>"+"<hr/>Магические числа: " + lv_html; //data.value +
+            }
+
+    </script>
+</head>
+
+<body>
+    <form name="laba9_form" method="get">
+        <label for="Value_1:">Введите n (0 ≤ n ≤ 999999):</label>
+        <input id="v1" name="v1" type="text" /> 
+        <input name="commit" type="submit" value="Выполнить поиск" onclick="return send_query();" />
+    </form>
+    <div id="result"></div>
+</body>
+
+</html>
