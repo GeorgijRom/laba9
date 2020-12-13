@@ -869,3 +869,90 @@ Processing by Laba9Controller#view as JSON
 Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1558)
 
 
+Started GET "/laba9/view.json?v1=5" for ::1 at 2020-12-13 12:16:42 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"5"}
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1504)
+
+
+Started GET "/laba9/view.json?v1=2" for ::1 at 2020-12-13 12:20:33 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"2"}
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1299)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:25:08 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1442)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:25:45 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:33:22 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1442)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:42:02 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 10ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:43:15 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:46:17 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:47:50 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:48:46 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1447)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:50:35 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:52:42 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:53:09 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/laba9/view.json?v1=10" for ::1 at 2020-12-13 12:56:09 +0300
+Processing by Laba9Controller#view as JSON
+  Parameters: {"v1"=>"10"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
